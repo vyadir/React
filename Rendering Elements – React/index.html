@@ -1,0 +1,49 @@
+<!--
+
+    Elaborado por: Yadir Vega Espinoza
+    Correo: vespinoza@ic-itcr.ac.cr
+
+    Ejercicio: Introducción a react, muy básico.
+    Nota: Cabe destacar que no se hace uso de buenas prácticas ni nada es nada más para mostrar particularidades 
+          de ReactDOM y JSX.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+        <!-- Cargamos React, no se suele utilizar así, es a mode de ejemplo -->
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+        
+    <title>React app</title>
+</head>
+<body>
+
+    <!-- Div donde se redenderizará una cadena de texto por medio de ReactDOM -->
+    <div id="root">
+
+    </div>
+
+    <!-- type "text/babel" dado que es  un codigo JSX, de este modo será procesado por babel-->
+    <script type="text/babel">
+
+        // Variable que contiene un nombre a mostrar en el tag
+        const nombre = "Yadir";
+
+        // Concatenando el nombre a la etiqueta que se va a redenderizar por medio de react
+        const h1Tag = <h1> Hola soy {nombre} </h1>;
+
+        // Obtengo la referencia del div con id root
+        const divRoot = document.querySelector('#root');
+
+        // Redenderizo en divRoot el h1Tag
+        ReactDOM.render(h1Tag,divRoot);
+    </script>
+
+</body>
+</html>

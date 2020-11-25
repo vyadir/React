@@ -1,6 +1,8 @@
 /*
     Elaborado por: Yadir Vega Espinoza
     Correo: vespinoza@ic-itcr.ac.cr
+
+    Funciones 
 */
 
 // Practica recomendada para crear funciones

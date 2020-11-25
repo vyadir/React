@@ -1,6 +1,8 @@
 /*
     Elaborado por: Yadir Vega Espinoza
     Correo: vespinoza@ic-itcr.ac.cr
+
+    Arreglos
 */
 
 // const arreglo = new Array(100); crea un arreglo de 100 posiciones vacías
